@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* show */
+.show {
+  transform: translate(500px, 0);
+  left: 0;
+  transition: .5s;
+}
+
+/* main */
+.main {
+  border: solid red;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  transition: .5s;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
+  padding: 0 1rem;
+  transition: .5s;
+}
+
+.header-toggle {
+  left: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* .space-toggle {
+  padding-left: 0;
+} */
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  width: 250px;
+  background-color: #2F4050;
+  transition: .5s;
+}
+
+.sidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.active {
+  color: #23c2c6 !important;
+}
+
+.sidebarList .row {
+  width: 100%;
+  height: 50px;
+  text-decoration: none !important;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+
+.sidebarList .row:hover {
+  color: #23c2c6 !important;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+  main {
+    margin: 2rem;
+  }
+
+  header {
+    /* left: 0; */
+    height: 2.5rem;
+    padding-left: 265px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    /* left: -250px; */
+    background-color: #2F4050;
+    transition: .5s;
+    width: 250px;
+    height: 100vh;
+    /* padding: 1rem; */
+  }
+
+  /* .sidebarList { */
+    /* height: auto; */
+    /* padding: 0; */
+    /* width: 100%; */
+  /* } */
+
+  .sidebarList .row {
+    /* width: 100%; */
+    height: 50px;
+    text-decoration: none !important;
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+  }
+  
+  .sidebarList .row:hover {
+    color: #23c2c6 !important;
+    cursor: pointer;
+  }
+
+  .space-toggle {
+    padding-left: 1rem;
+  }
+}
