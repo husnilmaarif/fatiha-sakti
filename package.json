@@ -1,0 +1,11 @@
+{
+  "name": "fatiha-sakti",
+  "version": "1.0.0",
+  "description": "technical test pt fatiha sakti",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "husnil maarif",
+  "license": "ISC"
+}
