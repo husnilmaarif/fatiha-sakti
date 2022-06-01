@@ -1,7 +1,6 @@
 // dependency
 import React, { useState } from "react";
 import { InputGroup, FormControl } from "react-bootstrap";
-// import ReactPaginate from "react-paginate";
 
 // icons
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
@@ -14,7 +13,6 @@ import Users from "../components/Users";
 function PersonnelList() {
   // hooks
   const [user, setUser] = useState("");
-  // const [pageNumber, setPageNumber] = useState(0)
 
   const handleSubmit = () => {
     console.log("berhasil");

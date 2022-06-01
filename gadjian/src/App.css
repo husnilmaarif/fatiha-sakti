@@ -80,6 +80,31 @@ header {
   position: relative;
 }
 
+/* pagination */
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  color: black;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  /* border: solid skyblue; */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: skyblue;
+}
+
 /* ========================================== */
 @media screen and (min-width: 768px){
   .profil-desk {
@@ -121,5 +146,30 @@ header {
   .background-pages {
     position: relative;
     margin-left: 250px;
+  }
+
+  /* pagination */
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paginationBttns a {
+    color: black;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    /* border: solid skyblue; */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .paginationBttns a:hover {
+    color: white;
+    background-color: skyblue;
   }
 }
