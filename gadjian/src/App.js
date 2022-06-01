@@ -17,8 +17,8 @@ function App() {
       <Sidebar />
       <Routes>
         <Route exact path="/" element={<Beranda />} />
-        <Route path="/personnelList" element={<PersonnelList />} />
-        <Route path="/dailyAttandance" element={<DailyAttendance />} />
+        <Route path="/PersonnelList" element={<PersonnelList />} />
+        <Route path="/DailyAttendance" element={<DailyAttendance />} />
       </Routes>
     </Router>
   );

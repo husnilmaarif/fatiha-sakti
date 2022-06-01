@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Beranda() {
-  return (
-    <div>Beranda</div>
-  )
+  return <div className="background-pages">Beranda</div>;
 }
 
-export default Beranda
+export default Beranda;

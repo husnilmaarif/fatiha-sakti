@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function DailyAttendance() {
-  return (
-    <div>DailyAttendance</div>
-  )
+  return <div className="background-pages">DailyAttendance</div>;
 }
 
-export default DailyAttendance
+export default DailyAttendance;

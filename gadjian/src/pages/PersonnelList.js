@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function PersonnelList() {
-  return (
-    <div>PersonnelList</div>
-  )
+  return <div className="background-pages">PersonnelList</div>;
 }
 
-export default PersonnelList
+export default PersonnelList;
