@@ -5,11 +5,9 @@ body {
 
 /* main */
 .main {
-  /* border: solid red; */
   position: relative;
   margin: 0;
   padding: 0;
-  /* font-size: 1rem; */
   transition: .5s;
 }
 
@@ -24,7 +22,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  /* padding: 0 1rem; */
   transition: .5s;
 }
 
@@ -81,13 +78,16 @@ header {
 /* background pages */
 .background-pages {
   position: relative;
-  background-color: #ccc;
 }
 
 /* ========================================== */
 @media screen and (min-width: 768px){
   .profil-desk {
     color: black;
+  }
+
+  .active {
+    color: #23c2c6 !important;
   }
 
   .profil-desk span {
@@ -117,14 +117,9 @@ header {
     cursor: pointer;
   }
 
-  /* .space-toggle {
-    padding-left: 1rem;
-  } */
-
   /* background pages */
   .background-pages {
-    background-color: #ccc;
-    padding: 20px;
+    position: relative;
     margin-left: 250px;
   }
 }

@@ -13,14 +13,14 @@ import HomeIcon from "@mui/icons-material/Home";
 import GroupsIcon from "@mui/icons-material/Groups";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-// page
 export default function Sidebar() {
+  // hooks
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const navigate = useNavigate();
+
+  // routes data
   const sidebarData = [
     {
       title: "Beranda",
@@ -75,7 +75,7 @@ export default function Sidebar() {
             return (
               <li
                 key={key}
-                className="row active"
+                className="row active ms-3"
                 onClick={() => {
                   navigate(val.link);
                 }}

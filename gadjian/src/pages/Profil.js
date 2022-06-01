@@ -1,11 +1,14 @@
+// dependency
 import React from "react";
 
+// component
+import Pengembangan from "../components/Pengembangan";
+
+// page
 function Profil() {
   return (
     <div className="background-pages">
-      <h1 className="text-light justify-content-center align-items-center p-5">
-        Dalam tahap pengembangan
-      </h1>
+      <Pengembangan />
     </div>
   );
 }
