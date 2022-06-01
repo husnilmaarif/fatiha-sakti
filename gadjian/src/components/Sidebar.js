@@ -1,8 +1,11 @@
-// dependency & picture
+// dependency
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Offcanvas } from "react-bootstrap";
+
+// assets
 import logo from "../assets/gadjian.png";
+import profil from "../assets/profile.png";
 
 // icons
 import MenuIcon from "@mui/icons-material/Menu";
@@ -12,7 +15,6 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 // page
 export default function Sidebar() {
-  // const [show, setShow] = useState(false);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -39,22 +41,24 @@ export default function Sidebar() {
 
   return (
     // semua style berada di file App.css
-    <main className="space-toggle">
-      <header className="space-toggle p-5">
+    <main>
+      <header className="p-4">
         <div className="header-toggle" onClick={handleShow}>
           <MenuIcon />
         </div>
-        {/* logo versi mobile */}
+        {/* logo mobile */}
         <img
           src={logo}
           alt="logo"
-          className="d-flex justify-content-center m-3 me-auto"
+          className="justify-content-center align-items-center me-auto"
           width={100}
         />
         {/* profil desktop */}
-        <div className="ms-auto">
-          Hallo, <span style={{color: '#23c2c6'}}>Gadjian User</span>
-          <img src={logo} alt='user' width={50} />
+        <div className="profil-desk align-items-center">
+          Hallo, <span>Gadjian User</span>
+          <Link to="/profil">
+            <img src={profil} alt="user" className="p-2" width={50} />
+          </Link>
         </div>
       </header>
 
@@ -63,7 +67,7 @@ export default function Sidebar() {
         <img
           src={logo}
           alt="logo"
-          className="d-flex justify-content-center m-3"
+          className="d-flex justify-content-center m-4"
           width={150}
         />
         <ul className="sidebarList" closeButton>

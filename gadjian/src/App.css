@@ -3,26 +3,20 @@ body {
   padding: 0;
 }
 
-/* show */
-/* .show {
-  transform: translate(500px, 0);
-  left: 0;
-  transition: .5s;
-} */
-
 /* main */
 .main {
-  border: solid red;
+  /* border: solid red; */
   position: relative;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   transition: .5s;
 }
 
 /* header */
 header {
-  position: fixed;
+  position: relative;
+  padding: 10px;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   transition: .5s;
 }
 
@@ -41,13 +35,9 @@ header {
   color: black;
 }
 
-.navbar-dekstop {
-  margin-bottom: 500px;
+.profil-desk, .profil-desk span {
+  color: white;
 }
-
-/* .space-toggle {
-  padding-left: 0;
-} */
 
 /* sidebar */
 .sidebar {
@@ -80,6 +70,7 @@ header {
   justify-content: center;
   align-items: center;
   color: black !important;
+  font-weight: bold;
 }
 
 .sidebarList .row:hover {
@@ -87,49 +78,33 @@ header {
   cursor: pointer;
 }
 
-/* beranda */
-.beranda {
-  background-color: #aeaeae;
-  height: 100vh;
-  width: 100%;
+/* background pages */
+.background-pages {
+  position: relative;
+  background-color: #ccc;
 }
 
 /* ========================================== */
-
 @media screen and (min-width: 768px){
-  main {
-    margin: 2rem;
+  .profil-desk {
+    color: black;
   }
 
-  header {
-    /* left: 0; */
-    height: 2.5rem;
-    padding-left: 265px;
-    /* box-shadow: #2F4050; */
+  .profil-desk span {
+    color: #23c2c6;
   }
 
   .sidebar {
     position: fixed;
     left: 0;
-    /* left: -250px; */
-    background-color: #2F4050;
     transition: .5s;
     width: 250px;
     height: 100vh;
-    /* padding: 1rem; */
   }
 
-  /* .sidebarList { */
-    /* height: auto; */
-    /* padding: 0; */
-    /* width: 100%; */
-  /* } */
-
   .sidebarList .row {
-    /* width: 100%; */
     height: 50px;
     text-decoration: none !important;
-    /* margin: 0; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -142,17 +117,14 @@ header {
     cursor: pointer;
   }
 
-  .space-toggle {
+  /* .space-toggle {
     padding-left: 1rem;
-  }
+  } */
 
   /* background pages */
   .background-pages {
-    background-color: #aeaeae;
-    height: 100vh;
-    /* width: 101px; */
+    background-color: #ccc;
     padding: 20px;
     margin-left: 250px;
-    margin-top: 90px;
   }
 }

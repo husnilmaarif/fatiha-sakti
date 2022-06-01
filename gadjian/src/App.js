@@ -10,6 +10,7 @@ import Sidebar from "./components/Sidebar";
 import Beranda from "./pages/Beranda";
 import PersonnelList from "./pages/PersonnelList";
 import DailyAttendance from "./pages/DailyAttendance";
+import Profil from "./pages/Profil";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route exact path="/" element={<Beranda />} />
-        <Route path="/PersonnelList" element={<PersonnelList />} />
-        <Route path="/DailyAttendance" element={<DailyAttendance />} />
+        <Route path="/personnelList" element={<PersonnelList />} />
+        <Route path="/dailyAttendance" element={<DailyAttendance />} />
+        <Route path="/profil" element={<Profil />} />
       </Routes>
     </Router>
   );
