@@ -101,11 +101,11 @@ header {
 }
 
 .paginationBttns a:hover {
-  color: white;
-  background-color: skyblue;
+  color: white !important;
+  background-color: black !important;
 }
 
-/* ========================================== */
+/* ================================== */
 @media screen and (min-width: 768px){
   .profil-desk {
     color: black;
@@ -162,14 +162,13 @@ header {
     padding: 10px;
     margin: 8px;
     border-radius: 5px;
-    /* border: solid skyblue; */
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
   }
 
   .paginationBttns a:hover {
-    color: white;
-    background-color: skyblue;
+    color: white !important;
+    background-color: black !important;
   }
 }
