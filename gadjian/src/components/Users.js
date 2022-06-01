@@ -45,37 +45,37 @@ function Users() {
                   className="rounded-circle px-4 py-1 mb-3"
                 />
                 <div>
-                  <p style={{ fontSize: "13px" }}>
+                  <p style={{ fontSize: "15px" }}>
                     Name
                     <br />
-                    <span className="text-muted" style={{ fontSize: "13px" }}>
+                    <span className="text-muted" style={{ fontSize: "15px" }}>
                       {user.name.first} {user.name.last}
                     </span>
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontSize: "13px" }}>
+                  <p style={{ fontSize: "15px" }}>
                     Telephone
                     <br />
-                    <span className="text-muted" style={{ fontSize: "13px" }}>
+                    <span className="text-muted" style={{ fontSize: "15px" }}>
                       {user.phone}
                     </span>
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontSize: "13px" }}>
+                  <p style={{ fontSize: "15px" }}>
                     Birthday
                     <br />
-                    <span className="text-muted" style={{ fontSize: "13px" }}>
+                    <span className="text-muted" style={{ fontSize: "15px" }}>
                       {user.dob.date}
                     </span>
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontSize: "13px" }}>
+                  <p style={{ fontSize: "15px" }}>
                     Email
                     <br />
-                    <span className="text-muted" style={{ fontSize: "13px" }}>
+                    <span className="text-muted" style={{ fontSize: "15px" }}>
                       {user.email}
                     </span>
                   </p>

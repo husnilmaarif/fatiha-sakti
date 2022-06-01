@@ -68,13 +68,11 @@ function PersonnelList() {
         </div>
 
         <div className="container bg-light py-3 mt-4">
-          <div className="row mx-2 bg-light justify-content-center align-items-center">
+          <div className="row mx-2 bg-light justify-content-center">
             <Users />
           </div>
         </div>
       </div>
-
-
     </>
   );
 }
