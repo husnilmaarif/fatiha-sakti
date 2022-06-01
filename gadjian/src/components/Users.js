@@ -35,8 +35,8 @@ function Users() {
     .slice(pagesVisited, pagesVisited + usersPerPage)
     .map((user, index) => {
       return (
-        <div className="col-md-3 rounded-10 mb-5">
-          <Card key={index} className="w-100 h-100">
+        <div className="col-md-3 rounded-10 mb-5" key={index}>
+          <Card className="w-100 h-100">
             <ListGroup.Item>
               Personnel ID:{" "}
               <span style={{ color: "#23c2c6" }}>{user.location.postcode}</span>

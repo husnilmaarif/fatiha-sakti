@@ -63,14 +63,14 @@ export default function Sidebar() {
       </header>
 
       {/* navigasi desktop */}
-      <div className="sidebar" show={show} onHide={handleClose}>
+      <div className="sidebar">
         <img
           src={logo}
           alt="logo"
           className="d-flex justify-content-center m-4"
           width={150}
         />
-        <ul className="sidebarList" closeButton>
+        <ul className="sidebarList">
           {sidebarData.map((val, key) => {
             return (
               <li
@@ -91,7 +91,7 @@ export default function Sidebar() {
 
       {/* navigasi mobile */}
       <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closebutton>
           <Offcanvas.Title>
             <img
               src={logo}
@@ -101,8 +101,8 @@ export default function Sidebar() {
             />
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-          <ul className="sidebarList" closeButton>
+        <Offcanvas.Body closebutton>
+          <ul className="sidebarList">
             {sidebarData.map((val, key) => {
               return (
                 <li
